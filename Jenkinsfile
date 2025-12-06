@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script {
                     // Run the container, map ports as needed
-                    sh "docker run -d -p 7002:7002 --name react-app1 $IMAGE_NAME:$IMAGE_TAG"
+                    sh "docker run -d -p 7002:80 --name react-app1 $IMAGE_NAME:$IMAGE_TAG"
                 }
             }
         }
